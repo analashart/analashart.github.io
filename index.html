@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anastasia Fforde Lashes — Stroud, Gloucestershire</title>
+<meta name="description" content="Specialist lash and brow studio in Stroud, Gloucestershire. Expert in mature eyes with over 6 years experience. TPO-free adhesives. Book via Square Appointments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --cream:#FAF7F2;
+  --warm-white:#FFFEF9;
+  --charcoal:#2C2925;
+  --muted:#7A7268;
+  --gold:#9E8A68;
+  --gold-light:#D4C4A8;
+  --gold-pale:#F0EBE0;
+  --border:#E8E2D8;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--charcoal);font-size:16px;line-height:1.6}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(8px);border-bottom:0.5px solid var(--border);padding:0 2rem}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;letter-spacing:0.08em;color:var(--charcoal);text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;letter-spacing:0.05em;transition:color 0.2s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-book{background:var(--charcoal);color:var(--cream)!important;padding:8px 20px;border-radius:2px;font-size:12px!important;letter-spacing:0.1em!important;text-transform:uppercase}
+.nav-book:hover{background:var(--gold)!important;color:var(--cream)!important}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 2rem 60px;background:var(--warm-white)}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.hero-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem;color:var(--charcoal)}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:15px;color:var(--muted);line-height:1.8;max-width:380px;margin-bottom:2.5rem}
+.btn-primary{display:inline-block;background:var(--charcoal);color:var(--cream);padding:14px 32px;text-decoration:none;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;border-radius:2px;transition:background 0.2s}
+.btn-primary:hover{background:var(--gold)}
+.btn-secondary{display:inline-block;color:var(--charcoal);padding:14px 32px;text-decoration:none;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;border:0.5px solid var(--border);border-radius:2px;margin-left:12px;transition:border-color 0.2s,color 0.2s}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold)}
+.hero-visual{position:relative}
+.hero-image-frame{background:var(--gold-pale);border-radius:4px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+/* ── REPLACE THIS BLOCK with: background:url('your-photo.jpg') center/cover no-repeat; ── */
+.hero-image-placeholder{text-align:center;padding:2rem}
+.hero-image-placeholder p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold);opacity:0.7}
+.hero-badge{position:absolute;bottom:-20px;right:-20px;background:var(--charcoal);color:var(--cream);padding:20px 24px;border-radius:4px;text-align:center}
+.hero-badge .num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;line-height:1;display:block}
+.hero-badge .label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);display:block;margin-top:4px}
+
+/* ── SECTIONS ── */
+section{padding:90px 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;margin-bottom:1.5rem}
+
+/* ── ABOUT ── */
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-image{background:var(--gold-pale);border-radius:4px;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center}
+/* ── REPLACE with: background:url('your-portrait.jpg') center/cover no-repeat; ── */
+.about-image p{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);opacity:0.7;text-align:center;padding:2rem}
+.about-text p{color:var(--muted);line-height:1.9;margin-bottom:1.2rem;font-size:15px}
+.signature{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-style:italic;color:var(--gold);margin-top:2rem}
+
+/* ── WHY STRIP ── */
+.why-strip{background:var(--gold-pale);padding:70px 2rem}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1100px;margin:0 auto}
+.why-card{padding:32px 28px;background:var(--warm-white);border-radius:4px;border-left:3px solid var(--gold)}
+.why-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--gold-light);line-height:1}
+.why-heading{font-size:14px;font-weight:500;letter-spacing:0.05em;margin:12px 0 10px;color:var(--charcoal)}
+.why-body{font-size:14px;color:var(--muted);line-height:1.75}
+
+/* ── SERVICES ── */
+.services{background:var(--warm-white)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;margin-top:3rem}
+.service-card{background:var(--warm-white);padding:36px 32px;transition:background 0.2s}
+.service-card:hover{background:var(--gold-pale)}
+.service-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;margin-bottom:8px}
+.service-desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.service-price{font-size:13px;font-weight:500;color:var(--gold);letter-spacing:0.05em}
+.services-note{margin-top:2rem;font-size:13px;color:var(--muted);font-style:italic}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--cream)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:3rem}
+.testi-card{background:var(--warm-white);border:0.5px solid var(--border);border-radius:4px;padding:28px 24px}
+.testi-stars{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:14px}
+.testi-quote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.65;color:var(--charcoal);font-style:italic;margin-bottom:16px}
+.testi-name{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
+
+/* ── GALLERY ── */
+.gallery{background:var(--gold-pale);padding:90px 2rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:3rem}
+.gallery-item{background:var(--warm-white);border-radius:4px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+/* ── REPLACE each .gallery-item content with: <img src="your-photo.jpg" alt="Lash work" style="width:100%;height:100%;object-fit:cover"> ── */
+.gallery-item p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--gold);opacity:0.6;text-align:center;padding:1rem}
+
+/* ── CTA STRIP ── */
+.cta-strip{background:var(--charcoal);padding:90px 2rem;text-align:center}
+.cta-strip .section-eyebrow{color:var(--gold-light)}
+.cta-strip .section-title{color:var(--cream)}
+.cta-strip p{color:var(--gold-light);font-size:15px;max-width:500px;margin:0 auto 2.5rem;opacity:0.85}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);border-top:0.5px solid rgba(255,255,255,0.08);padding:40px 2rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--cream);letter-spacing:0.08em;opacity:0.8}
+.footer-links{display:flex;gap:1.5rem;list-style:none}
+.footer-links a{font-size:12px;color:var(--gold-light);text-decoration:none;letter-spacing:0.05em;opacity:0.7;transition:opacity 0.2s}
+.footer-links a:hover{opacity:1}
+.footer-copy{font-size:12px;color:var(--gold-light);opacity:0.4}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .hero-inner,.about-grid{grid-template-columns:1fr;gap:40px}
+  .hero-visual{display:none}
+  .why-grid,.testi-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:0.75rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════
+     NAV
+════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Anastasia Fforde Lashes</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <!-- ★ REPLACE the href below with your actual Square Appointments booking link ★ -->
+      <li><a href="https://squareup.com/appointments/book/YOUR_LOCATION_ID" class="nav-book">Book now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Stroud, Gloucestershire</p>
+      <h1 class="hero-title">Lash &amp; brow<br>care for<br><em>grown women</em></h1>
+      <p class="hero-sub">Gentle, considered enhancements for mature eyes — by a technician who understands how lashes change with age, and how to make them beautiful again.</p>
+      <div>
+        <!-- ★ REPLACE href with your Square Appointments link ★ -->
+        <a href="https://squareup.com/appointments/book/YOUR_LOCATION_ID" class="btn-primary">Book your appointment</a>
+        <a href="#services" class="btn-secondary">View services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-frame">
+        <!-- ★ REPLACE this div's content with: <img src="hero.jpg" alt="Lash close-up" style="width:100%;height:100%;object-fit:cover"> ★ -->
+        <div class="hero-image-placeholder">
+          <p>Add your<br>hero photo here</p>
+        </div>
+        <div class="hero-badge">
+          <span class="num">6+</span>
+          <span class="label">Years experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     ABOUT
+════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-image">
+      <!-- ★ REPLACE with: <img src="portrait.jpg" alt="Anastasia" style="width:100%;height:100%;object-fit:cover;border-radius:4px"> ★ -->
+      <p>Your portrait<br>photo here</p>
+    </div>
+    <div class="about-text">
+      <p class="section-eyebrow">About Anastasia</p>
+      <h2 class="section-title">Lash expertise that<br>actually sees you</h2>
+      <p>I'm Anastasia — a lash and brow technician with over six years of experience, working from my private home studio in the heart of Stroud.</p>
+      <p>Most of my clients are women in their 50s and beyond. I've made it my work to understand how lashes and brows change with age: the sparseness, the changes in direction, the sensitivity. I use only the gentlest adhesives — TPO-free, tested for sensitive skin — and take every appointment at the pace you need.</p>
+      <p>This isn't a conveyor-belt salon. You get my full attention, a quiet space, and results that look polished without looking overdone.</p>
+      <div class="signature">Anastasia x</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     WHY CHOOSE ME
+════════════════════════════════════ -->
+<div class="why-strip">
+  <div style="max-width:1100px;margin:0 auto;margin-bottom:3rem">
+    <p class="section-eyebrow">Why clients choose me</p>
+    <h2 class="section-title" style="max-width:500px">The things that<br>actually matter</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <p class="why-heading">TPO-free adhesives</p>
+      <p class="why-body">My glue is free from TPO — a sensitiser now banned across the EU. Kinder on mature, sensitive skin and safer for the long term.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <p class="why-heading">Specialist in mature eyes</p>
+      <p class="why-body">Thinner lashes, hooded lids, and changed growth patterns need a different approach. I've built my practice around getting this right.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <p class="why-heading">Private home studio</p>
+      <p class="why-body">No background noise, no rushing. My studio in Stroud is calm, unhurried, and entirely focused on you during your appointment.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SERVICES
+════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <p class="section-eyebrow">Services &amp; pricing</p>
+    <h2 class="section-title">What I offer</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <p class="service-name">Classic lash extensions</p>
+        <p class="service-desc">A single extension per natural lash for a clean, refined look — perfect if you want defined eyes without appearing 'done'.</p>
+        <!-- ★ UPDATE price ★ -->
+        <p class="service-price">From £65 · Full set</p>
+      </div>
+      <div class="service-card">
+        <p class="service-name">Hybrid lash extensions</p>
+        <p class="service-desc">A blend of classic and volume techniques for a little more texture and fullness — still natural, just with more presence.</p>
+        <!-- ★ UPDATE price ★ -->
+        <p class="service-price">From £75 · Full set</p>
+      </div>
+      <div class="service-card">
+        <p class="service-name">Lash infills</p>
+        <p class="service-desc">Keeping your lashes looking their best between full sets. Recommended every 2–3 weeks for optimal retention.</p>
+        <!-- ★ UPDATE price ★ -->
+        <p class="service-price">From £40 · 2–3 week infill</p>
+      </div>
+      <div class="service-card">
+        <p class="service-name">Brow shaping &amp; tinting</p>
+        <p class="service-desc">A well-shaped, properly tinted brow makes every face look more defined. Includes a thorough consultation on shape.</p>
+        <!-- ★ UPDATE price ★ -->
+        <p class="service-price">From £28</p>
+      </div>
+      <div class="service-card">
+        <p class="service-name">Lash lift &amp; tint</p>
+        <p class="service-desc">A semi-permanent curl and tint of your natural lashes — low maintenance and lovely for those who prefer a lighter touch.</p>
+        <!-- ★ UPDATE price ★ -->
+        <p class="service-price">From £55</p>
+      </div>
+      <div class="service-card">
+        <p class="service-name">Patch test &amp; consultation</p>
+        <p class="service-desc">Required for all new clients. We'll talk through your lifestyle, eye health, and the right treatment for your lashes.</p>
+        <p class="service-price">Complimentary</p>
+      </div>
+    </div>
+    <!-- ★ UPDATE date ★ -->
+    <p class="services-note">Prices updated July 2025. All prices confirmed at consultation.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════ -->
+<section class="testimonials" id="reviews">
+  <div class="section-inner">
+    <p class="section-eyebrow">Client reviews</p>
+    <h2 class="section-title">What my clients say</h2>
+    <div class="testi-grid">
+      <!-- ★ REPLACE with real client reviews ★ -->
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"I've tried lashes elsewhere and always felt a bit lost. Anastasia takes so much care to understand what actually suits your face. I'm in my 60s and finally feel like lashes work for me."</p>
+        <p class="testi-name">— Mary P., Stroud</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"The studio is so calm and lovely. I've been coming for two years and wouldn't go anywhere else. Anastasia remembers everything about your lashes — she really pays attention."</p>
+        <p class="testi-name">— Client, Gloucestershire</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"I have sensitive eyes and was nervous about lash extensions. Anastasia was so reassuring, and the results were beautiful. No irritation at all. I was delighted."</p>
+        <p class="testi-name">— Client, Stroud</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     GALLERY
+════════════════════════════════════ -->
+<div class="gallery" id="gallery">
+  <div style="max-width:1100px;margin:0 auto">
+    <p class="section-eyebrow">Gallery</p>
+    <h2 class="section-title">The work</h2>
+    <div class="gallery-grid">
+      <!-- ★ REPLACE each placeholder p with: <img src="gallery-1.jpg" alt="Lash work" style="width:100%;height:100%;object-fit:cover"> ★ -->
+      <div class="gallery-item"><p>Photo 1</p></div>
+      <div class="gallery-item"><p>Photo 2</p></div>
+      <div class="gallery-item"><p>Photo 3</p></div>
+      <div class="gallery-item"><p>Photo 4</p></div>
+      <div class="gallery-item"><p>Photo 5</p></div>
+      <div class="gallery-item"><p>Photo 6</p></div>
+      <div class="gallery-item"><p>Photo 7</p></div>
+      <div class="gallery-item"><p>Photo 8</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     CTA
+════════════════════════════════════ -->
+<div class="cta-strip">
+  <p class="section-eyebrow">Book your appointment</p>
+  <h2 class="section-title">Ready for lashes<br>you'll actually love?</h2>
+  <p>New clients are always welcome. Start with a complimentary patch test and consultation — no pressure, just a proper conversation about what's right for your eyes.</p>
+  <!-- ★ REPLACE href with your Square Appointments link ★ -->
+  <a href="https://squareup.com/appointments/book/YOUR_LOCATION_ID" class="btn-primary" style="background:var(--gold);color:var(--cream)">Book via Square Appointments</a>
+</div>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Anastasia Fforde Lashes</span>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <!-- ★ UPDATE Instagram handle if needed ★ -->
+      <li><a href="https://instagram.com/ana_lash_art">Instagram</a></li>
+      <!-- ★ REPLACE href with your Square Appointments link ★ -->
+      <li><a href="https://squareup.com/appointments/book/YOUR_LOCATION_ID">Book now</a></li>
+    </ul>
+    <span class="footer-copy">Stroud, Gloucestershire</span>
+  </div>
+</footer>
+
+</body>
+</html>
